@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return (
+  return ( 
+    // return a JSX div
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -17,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        &nbsp;
+        <button className='btn btn-light' onClick={()=> window.open("https://reactjs.org",'_blank')}>Open New Page</button>
       </header>
     </div>
   );
