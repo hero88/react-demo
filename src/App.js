@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Routes, Route} from "react-router-dom";
 import Home from './components/Home';
-import Uncontrolled from './components/Uncontrolled';
-import Controlled from './components/Controlled';
 
 function App() {
   return ( 
@@ -16,8 +14,6 @@ function App() {
       </a> 
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='controlled' element={<Controlled/>}/>
-        <Route path='uncontrolled' element={<Uncontrolled/>}/>
       </Routes>
       <br/>
     </div>
